@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Anurag Yadav-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a731f3e69c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">P<span>ersonal</span><br> <span>P</span>ortfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3>Hello there!</h3>
+                <h1>I'm <span>Anurag</span>,<br> B.Tech student at <span>IIT Guwahati</span>,<br> specializing in <span>ECE</span>.<br></h1>
+                <h1 class = expanding> (Electronics and Communication Engineering) <br><br></h1>
+                    <h1> Welcome to my space!</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ChatGPT Image Jun 23, 2025, 12_49_11 AM.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm Anurag Yadav, <br>a B.Tech student in Electronics and Communication Engineering at IIT Guwahati. <br> With a strong interest in software development, machine learning, and game design. <br> I enjoy building full-stack applications using technologies like React, Node.js, and MongoDB. <br> And have hands-on experience with ML tools such as Python and Transformers. <br> I also develop 2D and 3D games using Unity and C#, focusing on gameplay mechanics. <br> I'm passionate about writing clean, efficient code and continuously improving through real-world projects.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tabs" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Skilled in HTML, CSS, JavaScript, and React for building dynamic user interfaces. <br> Experienced with backend technologies like Node.js, Express.js, and MongoDB <br> for developing full-stack, scalable web applications.</li>
+                            <li><span>Machine Learning</span><br>Proficient in Python, NumPy, pandas, and TensorFlow/Keras for building and training ML models. Skilled in classification, regression, and image processing using CNNs, with experience in model evaluation and deployment via Flask.</li> 
+                            <li><span>Game Development</span><br>Experienced in designing interactive 2D/3D gameplay using Unity (C#), with a focus on physics simulation and optimized asset handling.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>ZCoder</span><br>Developed a full-stack coding practice platform using React, Node.js, and MongoDB. Implemented real-time code evaluation and problem set management features.</li>
+                            <li><span>Text-Summarizer</span><br>Developed an end-to-end image classification system using Python, TensorFlow/Keras, and Flask. Built and deployed a CNN model for plant disease detection with real-time predictions through a user-friendly web interface.</li>
+                            <li><span>2D and 3D games</span><br>Built multiple 2D and 3D games in Unity with C#, focusing on gameplay mechanics, player interaction, and level design.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Electronics and Communication Engineering</span><br>Indian Institute of Technology Guwahati | 2023–2027</li>
+                            <li><span>Senior Secondary Education</span><br>Telangana State Board of Intermediate Education | Completed in 2023</li>
+                            <li><span>Secondary Education</span><br>Board of Secondary Education, Telangana | Completed in 2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Web Development</h2>
+                    <p>I design and develop responsive web applications with clean UI/UX and performant backends, using tools like React, Node.js, and MongoDB.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Machine Learning</h2>
+                    <p>I build data-driven models for classification, regression, and NLP using Python, NumPy, pandas, and TensorFlow/Keras. Skilled in CNNs, image preprocessing, model evaluation, and deploying models with Flask.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Game Development</h2>
+                    <p>I create interactive and visually rich 2D/3D games using Unity and Unreal Engine, focusing on gameplay logic, physics, and immersive design.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- portfolio -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ChatGPT Image Jun 23, 2025, 12_04_06 AM.png">
+                    <div class="layer">
+                        <h3>ZCoder</h3>
+                        <p>A coding practice platform, built using HTML, CSS, JavaScript, React, Node.js, and MongoDB. Users can attempt coding problems through an intuitive UI, and the platform supports problem creation, code submission, and evaluation through a custom-built judge system.</p>
+                        <a href="https://github.com/Anurag-Yadav-Mekala/ZCoder" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ChatGPT Image Jun 23, 2025, 12_08_24 AM.png">
+                    <div class="layer">
+                        <h3>Potato-Disease-Predictor</h3>
+                        <p>A deep learning–powered web application that identifies common potato leaf diseases from user-uploaded images using a Convolutional Neural Network (CNN). Built with Python, TensorFlow/Keras, Flask, HTML/CSS/JavaScript, and optionally Streamlit for rapid prototyping. Achieved ~97% accuracy in classifying Early Blight, Late Blight, and healthy leaves.</p>
+                        <a href="https://github.com/Anurag-Yadav-Mekala/Potato-Disease-Predictor.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ChatGPT Image Jun 23, 2025, 12_04_18 AM.png">
+                    <div class="layer">
+                        <h3>Silent-Fury <br> (2D Game)</h3>
+                        <p>A 2D ninja action game developed in Unity (C#). The player navigates through 3 levels filled with traps and enemy characters, using basic shooting mechanics. The goal is to reach a hidden treasure box while avoiding or eliminating threats along the way.</p>
+                        <a href="https://github.com/Anurag-Yadav-Mekala/Game02.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ChatGPT Image Jun 23, 2025, 12_04_23 AM.png">
+                    <div class="layer">
+                        <h3>Block-Collider (Basic 3D Game)</h3>
+                        <p>A level-based 3D game built in Unity using C#, where players control an auto-moving block. The challenge is to avoid stationary obstacles across 5 progressively difficult levels and reach the endpoint without collision. Combines spatial reasoning with timing-based gameplay.</p>
+                        <a href="https://github.com/Anurag-Yadav-Mekala/Game01.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ChatGPT Image Jun 23, 2025, 12_04_27 AM.png">
+                    <div class="layer">
+                        <h3>Plagarism-Checker</h3>
+                        <p>A terminal-based application written in pure C++ to detect similarity between text files. It uses string comparison techniques and file parsing logic to compute plagiarism percentages.</p>
+                        <a href="https://github.com/Anurag-Yadav-Mekala/Plagarism_Checker.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ChatGPT Image Jun 23, 2025, 12_04_45 AM.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Personal portfolio website developed using HTML, CSS, and JavaScript, showcasing my projects, skills, and experience. Features a responsive design, project gallery, and a working contact form integrated with Google Sheets.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+     </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> anuragyadavmekala@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7893186356</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1FnqSqLcMi/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Anurag_yadav_1" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/anurag_yadav_1?igsh=a3RmNndzdjNwMHBt" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/m-anurag-yadav" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn1">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tabs");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tabs");
+        }
+    </script>
+    <script>
+        var sm = document.getElementById("sidemenu");
+        function openmenu(){
+            sm.style.right = "0";
+        }
+        function closemenu(){
+            sm.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx3NUO9fWCkXlhr8k5xPpSkx3PSbOHIAf1pVgHlPgR7YB_KJhSdSOMTwz1coC0QHWga/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
